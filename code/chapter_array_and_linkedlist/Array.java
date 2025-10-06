@@ -1,3 +1,9 @@
+/**
+ * File: array.java
+ * Created Time: 2025-10-06
+ * Author: harkjeans (chengqi172@gmail.com)
+ */
+
 package code.chapter_array_and_linkedlist;
 
 import java.util.Arrays;
