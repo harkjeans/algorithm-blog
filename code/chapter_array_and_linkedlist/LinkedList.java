@@ -15,6 +15,16 @@ public class LinkedList {
         P.next = n1;
         n0.next = P;
     }
+
+    /* 删除链表的节点 n0 之后的首个节点 */
+    static void remove(ListNode n0) {
+        if (n0.next == null)
+            return;
+        // n0 -> P -> n1
+        ListNode P = n0.next;
+        ListNode n1 = P.next;
+        n0.next = n1;
+    }
             
     public static void main(String[] args) {
         /* 初始化链表 */
@@ -35,6 +45,11 @@ public class LinkedList {
         /* 插入节点 */
         insert(n0, new ListNode(0));
         System.out.println("插入节点后的链表为");
+        PrintUtil.printLinkedList(n0);
+
+        /* 删除节点 */
+        remove(n0);
+        System.out.println("删除节点后的链表为");
         PrintUtil.printLinkedList(n0);
     }
     
