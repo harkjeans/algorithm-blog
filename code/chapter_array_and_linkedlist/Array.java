@@ -9,7 +9,7 @@ package code.chapter_array_and_linkedlist;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Array {
+public class array {
     /* 随机访问数组元素 */
     static int randomAccess(int[] nums) {
         // 在区间 [0, nums.length) 中随机抽取一个数字

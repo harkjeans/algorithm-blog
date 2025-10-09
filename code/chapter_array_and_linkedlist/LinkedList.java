@@ -1,5 +1,5 @@
 /**
- * File: LinkedList.java
+ * File: linkedlist.java
  * Created Time: 2025-10-06
  * Author: harkjeans (chengqi172@gmail.com)
  */
@@ -8,7 +8,7 @@ package code.chapter_array_and_linkedlist;
 
 import code.utils.*;
 
-public class LinkedList {
+public class linkedlist {
     /* 在链表的节点 n0 之后插入节点 P */
     static void insert(ListNode n0, ListNode P) {
         ListNode n1 = n0.next;
@@ -24,6 +24,32 @@ public class LinkedList {
         ListNode P = n0.next;
         ListNode n1 = P.next;
         n0.next = n1;
+    }
+
+    /* 访问链表中索引为 index 的节点 */
+    static ListNode access(ListNode head, int index) {
+        for (int i = 0; i < index; i++) {
+            if (head == null) {
+                return null;
+            } else {
+                head = head.next;
+            }
+        }
+        return head;
+    }
+
+    /* 在链表中查找值为 target 的首个节点 */
+    static int find(ListNode head, int target) {
+        int index = 0;
+        while (head != null) {
+            if (head.val == target) {
+                return index;
+            } else {
+                head = head.next;
+                index++;
+            }
+        }
+        return -1;
     }
             
     public static void main(String[] args) {
@@ -51,6 +77,14 @@ public class LinkedList {
         remove(n0);
         System.out.println("删除节点后的链表为");
         PrintUtil.printLinkedList(n0);
+
+        /* 访问节点 */
+        ListNode node = access(n0, 3);
+        System.out.println("链表中索引 3 处的节点的值 = " + node.val);
+
+        /* 查找节点 */
+        int index = find(n0, 2);
+        System.out.println("链表中值为 2 的节点的索引 = " + index);
     }
     
 }
