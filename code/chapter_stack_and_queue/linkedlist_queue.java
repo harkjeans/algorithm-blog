@@ -7,7 +7,6 @@
 package code.chapter_stack_and_queue;
 
 import java.util.*;
-import code.utils.*;
 
 /* 基于链表实现队列 */
 class LinkedListQueue {

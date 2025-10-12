@@ -7,7 +7,6 @@
 package code.chapter_stack_and_queue;
 
 import java.util.Arrays;
-import code.utils.*;
 
 /* 基于链表实现栈 */
 class LinkedListStack {
