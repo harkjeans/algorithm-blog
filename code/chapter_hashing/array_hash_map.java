@@ -109,12 +109,12 @@ public class array_hash_map {
 
         /* 添加操作 */
         // 在哈希表中添加键值对 (key, value)
-        map.put(12836, "小哈");
-        map.put(15937, "小啰");
-        map.put(16750, "小算");
-        map.put(13276, "小法");
-        map.put(10583, "小鸭");
-        System.out.println("\n添加完成后，哈希表为\nKey -> Value");
+        map.put(12836, "Java");
+        map.put(15937, "C");
+        map.put(16750, "Python");
+        map.put(13276, "Rust");
+        map.put(10583, "Go");
+        System.out.println("添加完成后,哈希表为\nKey -> Value");
         map.print();
 
         /* 查询操作 */
